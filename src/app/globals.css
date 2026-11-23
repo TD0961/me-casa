@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-forest: #263F35;
+  --color-forest-dark: #192D26;
+  --color-cream: #F8F6F1;
+  --color-sand: #E8DFD0;
+  --color-clay: #B78D67;
+  --color-charcoal: #333532;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #F8F6F1;
+  color: #333532;
+  font-family: var(--font-manrope), sans-serif;
+  overflow-x: hidden;
+  selection-background-color: #263F35;
+  selection-color: #F8F6F1;
+}
+
+::selection {
+  background-color: #263F35;
+  color: #F8F6F1;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F6F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6C7B2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B78D67;
+}
+
+/* Glassmorphism subtle overlay */
+.editorial-glass {
+  background: rgba(248, 246, 241, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark-editorial-glass {
+  background: rgba(25, 45, 38, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
